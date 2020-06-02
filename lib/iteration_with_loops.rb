@@ -7,7 +7,7 @@ def join_nested_strings(src)
     while element_index < src[row_index].count do
       strings = src[row_index][element_index]
       if src[row_index].include?(Integer)
-        strings << src[row_index][element_index]
+        strings << src[row_index]
         element_index += 1
       end
     element_index += 1
