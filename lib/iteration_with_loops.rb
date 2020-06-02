@@ -10,7 +10,7 @@ def join_nested_strings(src)
         strings << src[row_index][element_index]
         element_index += 1
       end
-    element_row += 1
+    element_index += 1
     end
   row_index += 1
   end
