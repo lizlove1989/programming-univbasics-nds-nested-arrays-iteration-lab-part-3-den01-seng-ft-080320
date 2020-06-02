@@ -1,18 +1,17 @@
 def join_nested_strings(src)
   row_index = 0
   count = 0
-  
+  joined_array = []
   while row_index < src.count do
     element_index = 0
     while element_index < src[row_index].count do
-      strings = src[row_index]
-      if src[row_index].delete_if()
-        strings << src[row_index]
+      if src[row_index][element_index].delete_if{|a| a.is_an_int}
         element_index += 1
       end
     element_index += 1
     end
-  row_index += 1
+    joined_array << src[row_index]
+    row_index += 1
   end
-strings
+  joined_array
 end
