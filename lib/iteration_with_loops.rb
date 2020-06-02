@@ -13,5 +13,5 @@ def join_nested_strings(src)
     joined_array << src[row_index]
     row_index += 1
   end
-  puts joined_array.join(" ")
+  joined_array.join(" ")
 end
