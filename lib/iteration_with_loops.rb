@@ -6,7 +6,7 @@ def join_nested_strings(src)
     element_index = 0
     while element_index < src[row_index].count do
       strings = src[row_index][element_index]
-      if src[row_index][element_index].include?("")
+      if src[row_index][element_index].include?(String)
         strings << src[row_index][element_index]
         element_index += 1
       end
